@@ -19,31 +19,76 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+    <section id="hero" class="hero justify-content-center text-white">
       <main>
-        <h4>Kepada <span>Bapak/Ibu/Saudara/i, </span></h4>
-        <h1>Affan & Silva</h1>
-        <p>Akan melangsungkan akad pernikahan dalam :</p>
-        <div class="simply-countdown"></div>
-        <a href="#home" class="btn btn-lg mt-5" onClick="enableScroll()">Lihat Undangan</a>
+        
+        <!-- Title -->
+        <div id class="row">
+
+          <div class="col-lg-6 col-md-6 mt-5">
+            <div class="row mt-5">
+              <div class="col-1">
+              </div>
+              <div class="col-11 text-start">
+                <h5>The Wedding of</h5>
+                <h1>Silva & Affan</h1>
+                <p>10. 11. 23 || Friday</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="row">
+              <div class="col-11 text-end">
+              </div>
+              <div class="col-1">
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- Invitation -->
+        <div class="row">
+          <div class="col-lg-6 col-md-6 mt-5">
+            <div class="row">
+              <div class="col-1">
+              </div>
+              <div class="col-11 text-start">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="row">
+              <div class="col-11 text-end">
+                <h6>Dear </h6>
+                <h4 ><span>Bapak/Ibu/Saudara/i </span></h4>
+                <a href="#countdown" class="btn btn-lg mt-5" onClick="enableScroll()"><i class="bi bi-envelope-open"></i>&nbsp;&nbsp;&nbsp;Open Invitation</a>
+              </div>
+              <div class="col-1">
+              </div>
+            </div>
+          </div>
+        </div>
+ 
       </main>
     </section>
 
     <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
       <div class="container">
-        <a class="navbar-brand" href="#">Affan & Silva Wedding</a>
+        <a class="navbar-brand" href="#">&nbsp;&nbsp;&nbsp;</a>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Affan & Silva Wedding</h5>
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
             <div class="navbar-nav ms-auto">
-              <a class="nav-link" href="#home">Home</a>
-              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#countdown">Home</a>
+              <a class="nav-link" href="#above_info">Info</a>
               <a class="nav-link" href="#gallery">Gallery</a>
               <a class="nav-link" href="#rsvp">RSVP</a>
               <a class="nav-link" href="#gifts">Gifts</a>
@@ -53,44 +98,79 @@
       </div>
     </nav>
 
+    <section id="countdown" class="countdown">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h1>COUNTDOWN TIME</h1>
+            <h2>"Segala sesuatu Kami ciptakan berpasang-pasangan agar kamu mengingat (kebesaran Allah)."<br /> - QS. Adh-Dhariyat: 49</h2>
+            
+            <div class="box">
+              <div class="simply-countdown"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="home" class="home">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 text-center">
-            <h2>Acara Pernikahan</h2>
-            <h3>Diselanggarakan pada 10 November 2023 di Wangon, Banyumas, Jawa Tengah</h3>
-            <p>Oleh karena itu, dengan segala hormat kami bermaksud untuk mengundang Bapak/Ibu, Saudara/i, untuk hadir pada acara pernikahan kami.</p>
+            <h2>Assalamualaikum Wr. Wb.</h2>
+            <h3>Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i serta kerabat sekalian untuk menghadiri acara pernikahan kami.</h3>
           </div>
         </div>
+        
 
         <div class="row couple">
-          <div class="col-lg-6">
+          <div class="col-lg-5">
             <div class="row">
-              <div class="col-8 text-end">
-                <h3>Affan Zanuar Rafsanjani</h3>
+              <div class="col-8">
+                <img src="img/single/silva_border.jpg" alt="Silva Cita Cania"/>
+                
+                <h4>Silva Cita Cania</h4>
                 <p>
-                  Putra dari Bpk. Dwiko Winarno<br />
-                  dan <br />
-                  Ibu Titus Mulyaningsih
+                  Putri dari Bpk. Supangat &<br />
+                  Ibu Entin Nurgiati(Alm)
                 </p>
               </div>
-              <div class="col-4">
-                <img src="img/silva_info.jpg" alt="Affan Zanuar Rafsanjani" class="img-responsive rounded-circle" />
+              
+              <div class="col-4 text-start">
+                <div class="stacked-text">
+                  <h7>Bride</h7>
+                  <h7>Bride</h7>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-2 col-12 col-md-6 justify-content-center align-items-center text-center">
             <div class="row">
-              <div class="col-4">
-                <img src="img/affan_info.jpg" alt="Silva Cita Cania" class="img-responsive rounded-circle" />
+              <div class="col-2 col-12 col-md-6 justify-content-center align-items-center text-center">
+                <div class="with-split">
+                  <p>dengan</p>
+                </div>
               </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-5">
+            <div class="row">
+              <div class="col-4 text-end">
+                <div class="stacked-text">
+                  <h8>Groom</h8>
+                  <h8>Groom</h8>
+                </div>
+              </div>
+              
               <div class="col-8">
-                <h3>Silva Cita Cania</h3>
+                <img src="img/single/affan_border.jpg" alt="Affan Zanuar Rafsanjani"/>
+                <h4>Affan Zanuar Rafsanjani</h4>
                 <p>
-                  Putri dari Bpk. Supangat<br />
-                  dan <br />
-                  Ibu Entin
+                  Putra dari Bpk. H. Dwiko Winarno &<br />
+                  Ibu Hj. Titus Mulyaningsih
                 </p>
               </div>
             </div>
@@ -99,35 +179,47 @@
       </div>
     </section>
 
-    <section id="info" class="info">
+    <section id="above_info justify-content-center text-center" class="above_info">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
-            <h2>Informasi Acara</h2>
-            <p class="alamat">Alamat: Jl. Lapang, Kalipetung, Klapagading, Kec. Wangon, Kabupaten Banyumas, Jawa Tengah 53176</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.4874486490066!2d109.06896367375926!3d-7.521689292491224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6565f4acbbec7d%3A0x1ce51861ef11a9e4!2sJl.%20Lapang%2C%20Kalipetung%2C%20Klapagading%2C%20Kec.%20Wangon%2C%20Kabupaten%20Banyumas%2C%20Jawa%20Tengah%2053176!5e0!3m2!1sid!2sid!4v1697309002577!5m2!1sid!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <a href="https://maps.app.goo.gl/dPpF8sX9S1156VLv8" target="_blank" class="btn btn-light btn-sm my-3">Klik untuk membuka peta</a>
-            <p class="description">Jangan sampe salah alamat ya. kalo salah bisa brabe</p>
-          </div>
-        </div>
+        <p>"Dan kawinkanlah orang-orang yang sendirian di antara kamu, dan orang-orang yang layak (berkawin) dari hamba-hamba sahayamu yang lelaki dan hamba-hamba sahayamu yang perempuan. Jika mereka miskin Allah akan memampukan mereka dengan karunia-Nya. Dan Allah Maha luas (pemberian-Nya) lagi Maha Mengetahui." <br />-QS. An-Nur: 32</p>
+      </div>
+    </section>
 
-        <div class="row justify-content-center mt-4"></div>
-        <div class="col-10"></div>
-        <div class="card text-center text-bg-light mb-5">
-          <div class="card-header">Akad Nikah</div>
-          <div class="card-body">
-            <div class="row justify-content-center">
-              <div class="col-md-6">
-                <i class="bi bi-clock d-block"></i>
-                <span>09.00 - 11.00</span>
-              </div>
-              <div class="col-md-6">
-                <i class="bi bi-calendar d-block"></i>
-                <span>Jumat, 10 November 2023</span>
+    <section id="info" class="info">
+
+      <div class="container">
+
+        <div class="row fill-info">
+          <div class="col-4 col-lg-4">
+            <div class="row">
+              <div class="vertical-text">
+                <h1>INFO ACARA</h1>
               </div>
             </div>
           </div>
-          <div class="card-footer">Akad diharapkan untuk khidmat dan khusyuk</div>
+
+          <div class="col-8 col-lg-8 text-end">
+            <div class="row">
+              <div class="box-black">
+                <img src="img/bg_info_acara.jpg" alt="Affan Zanuar Rafsanjani"/>
+                <h2>AKAD NIKAH</h2>
+
+                <h3>10</h3>
+
+                <p>
+                  Jumat, November 2023<br />
+                  09.00 - 11.00<br />
+                  Lokasi, Rumah Mempelai Wanita
+                </p>
+
+                
+                <a href="javascript:void(0);" class="btn btn-lg mt-5">
+                  <h4>GOOGLE MAPS</h4>
+                </a>
+
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -136,30 +228,50 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
-            <h2>Galeri Foto</h2>
-            <p>Lorem Ipsum</p>
+            <h1>GALERI FOTO</h1>
+            <div class="element-divider"></div>
           </div>
         </div>
 
-        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-2">
+        <div class="row gallery-photo row-cols-lg-4 row-cols-md-3 row-cols-2">
           <div class="col mt-3">
-            <a href="img/gallery/bg_affan-silva.jpg" data-toggle="lightbox" data-caption="This describes the image" data-gallery="affansilva">
-              <img src="img/gallery/thumbnail/bg_affan-silva.jpg" alt="Affan & Silva 1" class="img-fluid w-100 rounded" />
+            <a href="img/gallery/gallery_affan_silva_1.jpg" data-toggle="lightbox" data-caption="This describes the image" data-gallery="affansilva">
+              <img src="img/gallery/thumbnail/gallery_affan_silva_1.jpg" alt="Affan & Silva 1" class="img-fluid w-100 rounded" />
             </a>
           </div>
           <div class="col mt-3">
-            <a href="img/gallery/affan_cita-cincin.jpg" data-toggle="lightbox" data-caption="This describes the image" data-gallery="affansilva">
-              <img src="img/gallery/thumbnail/affan_cita-cincin.jpg" alt="Affan & Silva 1" class="img-fluid w-100 rounded" />
+            <a href="img/gallery/gallery_affan_silva_2.jpg" data-toggle="lightbox" data-caption="This describes the image" data-gallery="affansilva">
+              <img src="img/gallery/thumbnail/gallery_affan_silva_2.jpg" alt="Affan & Silva 1" class="img-fluid w-100 rounded" />
             </a>
           </div>
           <div class="col mt-3">
-            <a href="img/gallery/bg_affan-silva.jpg" data-toggle="lightbox" data-caption="This describes the image" data-gallery="affansilva">
-              <img src="img/gallery/thumbnail/bg_affan-silva.jpg" alt="Affan & Silva 1" class="img-fluid w-100 rounded" />
+            <a href="img/gallery/gallery_affan_silva_3.jpg" data-toggle="lightbox" data-caption="This describes the image" data-gallery="affansilva">
+              <img src="img/gallery/thumbnail/gallery_affan_silva_3.jpg" alt="Affan & Silva 1" class="img-fluid w-100 rounded" />
             </a>
           </div>
           <div class="col mt-3">
-            <a href="img/gallery/bg_affan-silva.jpg" data-toggle="lightbox" data-caption="This describes the image" data-gallery="affansilva">
-              <img src="img/gallery/thumbnail/bg_affan-silva.jpg" alt="Affan & Silva 1" class="img-fluid w-100 rounded" />
+            <a href="img/gallery/gallery_affan_silva_4.jpg" data-toggle="lightbox" data-caption="This describes the image" data-gallery="affansilva">
+              <img src="img/gallery/thumbnail/gallery_affan_silva_4.jpg" alt="Affan & Silva 1" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/gallery_affan_silva_5.jpg" data-toggle="lightbox" data-caption="This describes the image" data-gallery="affansilva">
+              <img src="img/gallery/thumbnail/gallery_affan_silva_5.jpg" alt="Affan & Silva 1" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/gallery_affan_silva_6.jpg" data-toggle="lightbox" data-caption="This describes the image" data-gallery="affansilva">
+              <img src="img/gallery/thumbnail/gallery_affan_silva_6.jpg" alt="Affan & Silva 1" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/gallery_affan_silva_7.jpg" data-toggle="lightbox" data-caption="This describes the image" data-gallery="affansilva">
+              <img src="img/gallery/thumbnail/gallery_affan_silva_7.jpg" alt="Affan & Silva 1" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/gallery_affan_silva_8.jpg" data-toggle="lightbox" data-caption="This describes the image" data-gallery="affansilva">
+              <img src="img/gallery/thumbnail/gallery_affan_silva_8.jpg" alt="Affan & Silva 1" class="img-fluid w-100 rounded" />
             </a>
           </div>
         </div>
@@ -168,47 +280,53 @@
 
     <section id="rsvp" class="rsvp">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
-            <h2>Konfirmasi Kehadiran</h2>
-            <p>Isi form di bawah ini untuk melakukan konrifmasi kehadiran.</p>
+        <div class="box">
+
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-10 text-center">
+              <h1>R S V P</h1>
+              <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
+            </div>
           </div>
+  
+          <form class="row row-cols-md-auto g-3 align-items-center justify-content-center"
+          method="POST" 
+          action="https://script.google.com/macros/s/AKfycbzNzk4mj8Tk-QJu7qIjombaTvvF3P8sFVNGcWdup7eX2fBUnkZc1jRz20kxtXjN0tQX/exec" id="my-form">
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="nama" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="nama" name="nama" placeholder="Tulis nama di sini" />
+              </div>
+            </div>
+  
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="jumlah" class="form-label">Jumlah Kehadiran</label>
+                <input type="number" class="form-control" id="jumlah" name="jumlah" min="0" max="2" length="1" default="1" />
+              </div>
+            </div>
+  
+            
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="status" class="form-label">Konfirmasi</label>
+                <select name="status" id="status" class="form-select">
+                  <option selected">Pilih salah satu</option>
+                  <option value="Hadir">Hadir</option>
+                  <option value="Tidak Hadir">Tidak Hadir</option>
+                </select>
+              </div>
+            </div>
+  
+            <div class="col-12 btn btn-lg mt-5" style="margin-top: 36px;">
+              <button class="btn btn-primary">Kirim</button>
+            </div>
+  
+          </form>
+
+
         </div>
-
-        <form class="row row-cols-md-auto g-3 align-items-center justify-content-center"
-        method="POST" 
-        action="https://script.google.com/macros/s/AKfycbzNzk4mj8Tk-QJu7qIjombaTvvF3P8sFVNGcWdup7eX2fBUnkZc1jRz20kxtXjN0tQX/exec" id="my-form">
-          <div class="col-12">
-            <div class="mb-3">
-              <label for="nama" class="form-label">Nama</label>
-              <input type="text" class="form-control" id="nama" name="nama" placeholder="Tulis nama di sini" />
-            </div>
-          </div>
-
-          <div class="col-12">
-            <div class="mb-3">
-              <label for="jumlah" class="form-label">Jumlah Kehadiran</label>
-              <input type="number" class="form-control" id="jumlah" name="jumlah" min="0" max="2" length="1" default="1" />
-            </div>
-          </div>
-
-          
-          <div class="col-12">
-            <div class="mb-3">
-              <label for="status" class="form-label">Konfirmasi</label>
-              <select name="status" id="status" class="form-select">
-                <option selected">Pilih salah satu</option>
-                <option value="Hadir">Hadir</option>
-                <option value="Tidak Hadir">Tidak Hadir</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="col-12" style="margin-top: 36px;">
-            <button class="btn btn-primary">Kirim</button>
-          </div>
-
-        </form>
+        
         
         <div class="row justify-content-center mt-5">
           <div class="col-md-6">
@@ -241,21 +359,33 @@
     <section id="gifts" class="gifts">
 
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
-            <h2>Kirim Hadiah</h2>
-            <p>Ungkapan tanda kasih.</p>
-          </div>
-        </div>
+        <div class="container">
 
-        <div class="row justify-content-center text-center">
-          <div class="col-md-6">
-            <ul class="list-group">
-              <li class="list-group-item">
-                <div class="fw-bold">Danamon</div>
-                003623351370 - SILVA CITA CANIA
-              </li>
-            </ul>
+          <div class="row fill-info">
+            <div class="col-4 col-lg-4">
+              <div class="row">
+                <div class="vertical-text">
+                  <h1>GIFTS</h1>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-8 col-lg-8 text-end">
+              <div class="row">
+                
+                <p>
+                  BANK Danamon<br />
+                  003623351370<br />
+                  a.n SILVA CITA CANIA
+                </p>
+
+                
+                <a href="javascript:void(0);" class="btn btn-lg mt-5" onclick="copyToClipboard('003623351370')">
+                  <h4>SALIN</h4>
+                </a>
+                
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -275,6 +405,7 @@
 
           </div>
         </div>
+        <div id="snackbar">Teks telah disalin</div>
        </div>
     </footer>
 
@@ -364,9 +495,32 @@
         isPlaying = !isPlaying;
       }
 
+
+
       // if (!localStorage.getItem("opened")) {
       // }
       disableScroll();
+    </script>
+
+    <script>
+      function copyToClipboard() {
+        var textToCopy = "003623351370"; // Gantilah dengan teks yang ingin Anda salin
+        var textArea = document.createElement("textarea");
+        textArea.value = textToCopy;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+
+        var snackbar = document.getElementById("snackbar");
+        snackbar.textContent = "Nomor Rek Tersalin";
+        snackbar.style.display = "block";
+
+        setTimeout(function() {
+          snackbar.style.display = "none";
+        }, 2500);
+      }
+
     </script>
 
     <script>
