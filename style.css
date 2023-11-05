@@ -42,8 +42,8 @@ body {
 
 .element-divider {
   border-top: 1px solid #202020; /* Ketebalan dan warna garis pemisah yang sesuai */
-  margin-left: 20%;
-  margin-right: 20%;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .vertical-text {
@@ -121,7 +121,8 @@ body {
 }
 
 .mynavbar .offcanvas {
-  height: 100vh;
+  height: 80vh;
+  margin-top: 1rem;
 }
 
 .mynavbar .navbar-brand,
@@ -137,7 +138,7 @@ body {
 
 .box {
   border: 1px solid white;
-  margin: 20px;
+  padding: 20px;
 }
 
 .box-black {
@@ -188,6 +189,46 @@ body {
 }
 
 .countdown h2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  font-family: "Cormorant Italic", sans-serif;
+  font-size: 1.8rem;
+  text-shadow: var(--shadow);
+  color: white;
+  line-height: 1.3em;
+}
+
+.ending::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/bg_countdown.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  filter: none;
+}
+
+.ending {
+  position: relative;
+  min-height: 35vh;
+  margin-top: -6.5rem;
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+}
+
+.ending h1 {
+  font-family: "Brittany", sans-serif;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.ending h2 {
   margin-top: 15px;
   margin-bottom: 15px;
   padding-right: 2rem;
@@ -439,21 +480,28 @@ body {
   font-size: 2rem;
   font-family: "Cormorant", sans-serif;
   color: var(--basic);
-  margin-right: 1rem;
 }
 
 .info a,
 .gifts a {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  margin-right: 1rem;
   padding-top: 1rem;
-  padding-left: 2rem;
   color: var(--basic);
   background-color: transparent;
   border-color: var(--basic);
-  align-items: center;
-  justify-content: center;
+}
+
+.info a:hover,
+.gifts a:hover {
+  background-color: transparent;
+  border-color: var(--basic);
+}
+
+.info button,
+.gifts button {
+  background-color: transparent;
+  border-color: var(--basic);
 }
 
 .info p,
@@ -462,37 +510,6 @@ body {
   font-family: "Cormorant", sans-serif;
   color: var(--basic);
   margin-right: 1rem;
-}
-
-.info .alamat {
-  font-size: 1.1rem;
-}
-
-.info .description {
-  font-size: 1rem;
-  font-weight: 300;
-}
-
-.info .card {
-  background-color: rgba(255, 255, 255, 0.2) !important;
-  color: white !important;
-  border: 1px solid #999;
-}
-
-.info .card-header {
-  border-bottom: 1px solid #999;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-}
-
-.info .card-body {
-  font-size: 1rem;
-}
-
-.info .card-footer {
-  border-top: 1px solid #999;
-  font-size: 0.9rem;
-  font-weight: 300;
 }
 
 .gifts {
@@ -523,6 +540,12 @@ body {
   margin-top: 3rem;
 }
 
+/* Mencegah gambar berubah menjadi landscape */
+.lightbox {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .rsvp {
   background-color: var(--bg);
   padding-top: 1.5rem;
@@ -533,6 +556,32 @@ body {
   font-family: "Cormorant", sans-serif;
   margin-top: 1.5rem;
   font-size: 2.5rem;
+  color: white;
+}
+
+.rsvp h2 {
+  font-family: "Cormorant", sans-serif;
+  font-size: 1.8rem;
+  color: white;
+  margin-top: 0.3rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.rsvp h2:hover {
+  background-color: transparent;
+  color: whi;
+}
+
+.rsvp button {
+  background-color: transparent;
+  color: white;
+}
+
+.rsvp button:hover {
+  background-color: transparent;
   color: white;
 }
 
@@ -575,9 +624,27 @@ body {
   border: 1px solid white;
 }
 
+.rsvp button:hover {
+  color: white;
+  border: 1px solid white;
+}
+
+.wish {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background-color: #0a0a0a;
+}
+
+.wish h1 {
+  font-family: "Cormorant", sans-serif;
+  margin-top: 3.5rem;
+  font-size: 2.5rem;
+  color: white;
+}
+
 footer {
   padding: 3rem;
-  background-color: var(--dusty);
+  background-color: #404240;
   color: white;
 }
 
@@ -602,8 +669,40 @@ footer li {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #333;
+  background-color: #16bc00;
   color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Cormorant", sans-serif;
+  padding: 1rem;
+  margin: 3rem;
+  border-radius: 1rem;
+}
+
+#snackbar-success {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #16bc00;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Cormorant", sans-serif;
+  padding: 1rem;
+  margin: 3rem;
+  border-radius: 1rem;
+}
+
+#snackbar-failure {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #bc0000;
+  color: #ffffff;
   text-align: center;
   font-size: 1.5rem;
   font-family: "Cormorant", sans-serif;
@@ -661,7 +760,7 @@ footer li {
     margin: 5px;
   }
   .mynavbar .nav-link {
-    font-size: 2rem;
+    font-size: 1.3rem;
     text-align: center;
   }
   .sticky-top {
