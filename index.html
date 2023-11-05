@@ -281,7 +281,6 @@
     <section id="rsvp" class="rsvp">
       <div class="container">
         <div class="box">
-
           <div class="row justify-content-center">
             <div class="col-md-8 col-10 text-center">
               <h1>R S V P</h1>
@@ -321,10 +320,7 @@
             <div class="col-12 btn btn-lg mt-5" style="margin-top: 36px;">
               <button class="btn btn-primary" id="submit-button"><h2>Kirim</h2></button>
             </div>
-  
           </form>
-
-
         </div>
         
         <div class="wish">
@@ -361,7 +357,6 @@
       </div>
     </section>
 
-
     <section id="gifts" class="gifts">
 
       <div class="container">
@@ -387,9 +382,7 @@
                 <a href="javascript:void(0);" class="btn btn-lg mt-5" onclick="copyToClipboard('003623351370')">
                   <h4>SALIN</h4>
                 </a>
-
               </div>
-              
             </div>
           </div>
         </div>
@@ -416,18 +409,17 @@
           <div class="col text-center">
             <small class="block">&copy; 2023 Home Made.</small>
             <small class="block">Design by affan zanuar. <a href="https://instagram.com/afnznr">@afnznr</a></small>
-
             <ul class="mt-3">
               <li><a href="https://instagram.com/afnznr"><i class="bi bi-instagram"></i></a></li>
               <li><a href="https://www.linkedin.com/in/affanzanuar/"><i class="bi bi-linkedin"></i></a></li>
             </ul>
-
           </div>
         </div>
         <div id="snackbar">Teks telah disalin</div>
         <div id="snackbar-success">Konfirmasi kehadiran berhasil dikirim</div>
-        <div id="snackbar-failure">Nama harus diisi.</div>
-        <div id="snackbar-failure">Anda harus memilih Hadir atau Tidak Hadir.</div>
+        <div id="snackbar-failure">Nama harus diisi</div>
+        <div id="snackbar-failure">Anda harus memilih Hadir atau Tidak Hadir</div>   
+        <div id="snackbar-failure">Jumlah harus diisi dan lebih dari 0</div>
        </div>
     </footer>
 
@@ -437,7 +429,6 @@
       </audio>
       <div class="audio-icon-wrapper" style="display: none;">
         <i class="bi bi-disc"></i>
-
       </div>
     </div>
 
@@ -460,26 +451,37 @@
               snackbar.style.display = "none";
             }, 3000);
         }
-
-          // Memeriksa apakah nama sudah diisi
-        if (nama.trim() === "") {
-          // alert("Nama harus diisi sebelum mengirimkan formulir.");
-          e.preventDefault(); // Mencegah pengiriman formulir jika nama tidak diisi.
-          var snackbar = document.getElementById("snackbar-failure");
-          snackbar.textContent = "Nama harus diisi";
-          snackbar.style.display = "block";
-
-          setTimeout(function() {
-            snackbar.style.display = "none";
-          }, 2500);
-        }
     
         // Memeriksa apakah pengguna telah memilih "Hadir" atau "Tidak Hadir"
         if (selectedStatus === "Pilih salah satu") {
           // alert("Anda harus memilih Hadir atau Tidak Hadir sebelum mengirimkan formulir.");
           e.preventDefault(); // Mencegah pengiriman formulir jika status belum dipilih.
           var snackbar = document.getElementById("snackbar-failure");
-          snackbar.textContent = "Anda harus memilih Hadir atau Tidak Hadir.";
+          snackbar.textContent = "Anda harus memilih Hadir atau Tidak Hadir";
+          snackbar.style.display = "block";
+
+          setTimeout(function() {
+            snackbar.style.display = "none";
+          }, 2500);
+        }
+        
+        if (jumlah.trim() === "") {
+          // alert("Nama harus diisi sebelum mengirimkan formulir.");
+          e.preventDefault(); // Mencegah pengiriman formulir jika nama tidak diisi.
+          var snackbar = document.getElementById("snackbar-failure");
+          snackbar.textContent = "Jumlah harus diisi dan lebih dari 0";
+          snackbar.style.display = "block";
+
+          setTimeout(function() {
+            snackbar.style.display = "none";
+          }, 2500);
+        }
+        
+        if (nama.trim() === "") {
+          // alert("Nama harus diisi sebelum mengirimkan formulir.");
+          e.preventDefault(); // Mencegah pengiriman formulir jika nama tidak diisi.
+          var snackbar = document.getElementById("snackbar-failure");
+          snackbar.textContent = "Nama harus diisi";
           snackbar.style.display = "block";
 
           setTimeout(function() {
@@ -613,10 +615,6 @@
             // var snackbar = document.getElementById("snackbar-success");
             // snackbar.textContent = "Konfirmasi kehadiran berhasil dikirim";
             // snackbar.style.display = "block";
-
-            // setTimeout(function() {
-            //   snackbar.style.display = "none";
-            // }, 3000);
           })
         });
       });
@@ -633,6 +631,5 @@
       document.querySelector('#nama').value = nama;
 
     </script>
-
   </body>
 </html>
