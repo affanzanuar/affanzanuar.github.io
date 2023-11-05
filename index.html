@@ -105,7 +105,7 @@
             <h1>COUNTDOWN TIME</h1>
             <h2>"Segala sesuatu Kami ciptakan berpasang-pasangan agar kamu mengingat (kebesaran Allah)."<br /> - QS. Adh-Dhariyat: 49</h2>
             
-            <div class="box">
+            <div class="box-countdown">
               <div class="simply-countdown"></div>
             </div>
           </div>
@@ -414,12 +414,12 @@
        <div class="container">
         <div class="row">
           <div class="col text-center">
-            <small class="block">&copy; 2023 Affan Wedding. All Right Reserved.</small>
-            <small class="block">Design by <a href="https://instagram.com/afnznr">@afnznr</a></small>
+            <small class="block">&copy; 2023 Home Made.</small>
+            <small class="block">Design by affan zanuar. <a href="https://instagram.com/afnznr">@afnznr</a></small>
 
             <ul class="mt-3">
-              <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-              <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+              <li><a href="https://instagram.com/afnznr"><i class="bi bi-instagram"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/affanzanuar/"><i class="bi bi-linkedin"></i></a></li>
             </ul>
 
           </div>
@@ -524,6 +524,13 @@
       const song = document.querySelector('#song');
       let isPlaying = false;
 
+      function hideInvitationButton() {
+        var invitationButton = document.querySelector(".btn.btn-lg");
+        if (invitationButton) {
+         invitationButton.style.display = "none";
+        }
+      }
+
       function disableScroll() {
         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
@@ -536,6 +543,7 @@
       }
 
       function enableScroll() {
+        hideInvitationButton()
         window.onscroll = function () { }
         rootElement.style.scrollBehavior = 'smooth';
         // localStorage.setItem("opened", "true");

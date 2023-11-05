@@ -141,6 +141,11 @@ body {
   padding: 20px;
 }
 
+.box-countdown {
+  border: 1px solid white;
+  margin: 20px;
+}
+
 .box-black {
   border: 0.6px solid black;
   padding: 0.6rem;
@@ -225,6 +230,7 @@ body {
 .ending h1 {
   font-family: "Brittany", sans-serif;
   font-size: 2.5rem;
+  margin-top: 4rem;
   color: white;
 }
 
@@ -630,8 +636,8 @@ body {
 }
 
 .wish {
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: 2.8rem;
+  padding-right: 2.8rem;
   background-color: #0a0a0a;
 }
 
@@ -661,6 +667,7 @@ footer a:hover {
 footer li {
   list-style: none;
   display: inline;
+  margin: 0.3rem;
 }
 
 #snackbar {
